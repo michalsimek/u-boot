@@ -91,7 +91,7 @@ int binman_init(void)
 	binman->image = ofnode_path("/binman");
 	if (!ofnode_valid(binman->image))
 		return log_msg_ret("binman node", -EINVAL);
-	binman->rom_offset = ROM_OFFSET_NONE;
+	binman_set_rom_offset(ROM_OFFSET_NONE);
 
 	return 0;
 }
