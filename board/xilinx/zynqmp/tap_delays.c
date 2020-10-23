@@ -54,15 +54,6 @@
 
 #define MMC_BANK2		0x2
 
-#define MMC_TIMING_UHS_SDR25		1
-#define MMC_TIMING_UHS_SDR50		2
-#define MMC_TIMING_UHS_SDR104		3
-#define MMC_TIMING_UHS_DDR50		4
-#define MMC_TIMING_MMC_HS200		5
-#define MMC_TIMING_SD_HS		6
-#define MMC_TIMING_MMC_DDR52		7
-#define MMC_TIMING_MMC_HS		8
-
 void zynqmp_dll_reset(u8 deviceid)
 {
 	/* Issue DLL Reset */
