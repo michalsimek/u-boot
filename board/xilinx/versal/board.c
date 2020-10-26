@@ -244,3 +244,13 @@ int dram_init(void)
 void reset_cpu(ulong addr)
 {
 }
+
+int __maybe_unused board_fit_config_name_match(const char *name)
+{
+	debug("%s: Check %s, default %s\n", __func__, name, DEVICE_TREE);
+
+	if (!strcmp(name, DEVICE_TREE))
+		return 0;
+
+	return -1;
+}
